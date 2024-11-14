@@ -161,7 +161,7 @@ public class User {
                 ", canReadAllGroupMessages=" + this.getCanReadAllGroupMessages() +
                 ", supportsInlineQueries=" + this.getSupportsInlineQueries() +
                 ", canConnectToBusiness=" + this.getCanConnectToBusiness() +
-                ", hasMainWebApp=" + this.getHasMainWebApp();
+                ", hasMainWebApp=" + this.getHasMainWebApp() + ")";
     }
 
     public User() {

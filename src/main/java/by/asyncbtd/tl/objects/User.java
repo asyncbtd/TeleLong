@@ -169,40 +169,18 @@ public class User {
 
     public User(Long id, Boolean isBot, String firstName, String lastName, String username, String languageCode, Boolean isPremium, Boolean addedToAttachmentMenu,
                 Boolean canJoinGroups, Boolean canReadAllGroupMessages, Boolean supportsInlineQueries, Boolean canConnectToBusiness, Boolean hasMainWebApp) {
-        if (id == null) {
-            throw new NullPointerException("id is marked non-null but is null");
-        } else if (isBot == null) {
-            throw new NullPointerException("isBot is marked non-null but is null");
-        } else if (firstName == null) {
-            throw new NullPointerException("firstName is marked non-null but is null");
-        } else {
-            this.id = id;
-            this.isBot = isBot;
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.username = username;
-            this.languageCode = languageCode;
-            this.isPremium = isPremium;
-            this.addedToAttachmentMenu = addedToAttachmentMenu;
-            this.canJoinGroups = canJoinGroups;
-            this.canReadAllGroupMessages = canReadAllGroupMessages;
-            this.supportsInlineQueries = supportsInlineQueries;
-            this.canConnectToBusiness = canConnectToBusiness;
-            this.hasMainWebApp = hasMainWebApp;
-        }
-    }
-
-    public User(Long id, Boolean isBot, String firstName) {
-        if (id == null) {
-            throw new NullPointerException("id is marked non-null but is null");
-        } else if (isBot == null) {
-            throw new NullPointerException("isBot is marked non-null but is null");
-        } else if (firstName == null) {
-            throw new NullPointerException("firstName is marked non-null but is null");
-        } else {
-            this.id = id;
-            this.isBot = isBot;
-            this.firstName = firstName;
-        }
+        this.id = id;
+        this.isBot = isBot;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
+        this.languageCode = languageCode;
+        this.isPremium = isPremium;
+        this.addedToAttachmentMenu = addedToAttachmentMenu;
+        this.canJoinGroups = canJoinGroups;
+        this.canReadAllGroupMessages = canReadAllGroupMessages;
+        this.supportsInlineQueries = supportsInlineQueries;
+        this.canConnectToBusiness = canConnectToBusiness;
+        this.hasMainWebApp = hasMainWebApp;
     }
 }

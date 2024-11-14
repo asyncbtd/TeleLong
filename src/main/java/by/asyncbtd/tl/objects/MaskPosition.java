@@ -57,9 +57,9 @@ public class MaskPosition {
 
     public String toString() {
         return "MaskPosition(point=" + this.point +
-                ", xShift" + this.xShift +
-                ", yShift" + this.yShift +
-                ", scale" + this.scale + ")";
+                ", xShift=" + this.xShift +
+                ", yShift=" + this.yShift +
+                ", scale=" + this.scale + ")";
     }
 
     public MaskPosition() {

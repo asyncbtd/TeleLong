@@ -68,8 +68,8 @@ public class PhotoSize {
         return "PhotoSize(fileId=" + this.fileId +
                 ", fileUniqueId=" + this.fileUniqueId +
                 ", width=" + this.width +
-                ", height" + this.height +
-                ", fileSize" + this.fileSize + ")";
+                ", height=" + this.height +
+                ", fileSize=" + this.fileSize + ")";
     }
 
     public PhotoSize() {

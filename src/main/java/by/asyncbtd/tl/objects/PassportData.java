@@ -39,6 +39,11 @@ public class PassportData {
         this.credentials = credentials;
     }
 
+    public String toString() {
+        return "PassportData(data=" + this.getData() +
+                ", credentials=" + this.getCredentials() + ")";
+    }
+
     public PassportData() {
     }
 

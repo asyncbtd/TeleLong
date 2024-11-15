@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.business;
+
+import by.asyncbtd.tl.objects.Location;
 
 public class BusinessLocation {
 

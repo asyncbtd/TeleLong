@@ -18,7 +18,7 @@ package by.asyncbtd.tl.objects.background;
 
 import by.asyncbtd.tl.objects.Document;
 
-public class BackgroundTypeWallpaper {
+public class BackgroundTypeWallpaper implements BackgroundType {
 
     private String type;
     private Document document;

@@ -16,7 +16,7 @@
 
 package by.asyncbtd.tl.objects.background;
 
-public class BackgroundTypeFill {
+public class BackgroundTypeFill implements BackgroundType {
 
     private String type;
     private BackgroundFill fill;

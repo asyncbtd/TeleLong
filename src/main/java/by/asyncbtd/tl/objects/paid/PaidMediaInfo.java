@@ -40,8 +40,8 @@ public class PaidMediaInfo {
     }
 
     public String toString() {
-        return "PaidMediaInfo(starCount=" + getStarCount() +
-                ", paidMedia=" + getPaidMedia() + ")";
+        return "PaidMediaInfo(starCount=" + this.getStarCount() +
+                ", paidMedia=" + this.getPaidMedia() + ")";
     }
 
     public PaidMediaInfo(){

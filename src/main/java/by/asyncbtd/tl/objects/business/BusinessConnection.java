@@ -47,7 +47,7 @@ public class BusinessConnection {
         return canReply;
     }
 
-    public Boolean getEnabled() {
+    public Boolean getIsEnabled() {
         return isEnabled;
     }
 
@@ -71,17 +71,17 @@ public class BusinessConnection {
         this.canReply = canReply;
     }
 
-    public void setEnabled(Boolean enabled) {
-        isEnabled = enabled;
+    public void setIsEnabled(Boolean isEnabled) {
+        this.isEnabled = isEnabled;
     }
 
     public String toString() {
-        return "BusinessConnection(id=" + this.id +
-                ", user=" + this.user +
-                ", userChatId=" + this.userChatId +
-                ", date=" + this.date +
-                ", canReply" + this.canReply +
-                ", isEnable" + this.isEnabled + ")";
+        return "BusinessConnection(id=" + this.getId() +
+                ", user=" + this.getUser() +
+                ", userChatId=" + this.getUserChatId() +
+                ", date=" + this.getDate() +
+                ", canReply" + this.getCanReply() +
+                ", isEnable" + this.getIsEnabled() + ")";
     }
 
     public BusinessConnection() {

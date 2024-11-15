@@ -74,12 +74,12 @@ public class Location {
     }
 
     public String toString() {
-        return "Location(latitude=" + this.latitude +
-                ", longitude=" + this.longitude +
-                ", horizontalAccuracy=" + this.horizontalAccuracy +
-                ", livePeriod=" + this.livePeriod +
-                ", heading=" + this.heading +
-                ", proximityAlertRadius=" + this.proximityAlertRadius + ")";
+        return "Location(latitude=" + this.getLatitude() +
+                ", longitude=" + this.getLongitude() +
+                ", horizontalAccuracy=" + this.getHorizontalAccuracy() +
+                ", livePeriod=" + this.getLivePeriod() +
+                ", heading=" + this.getHeading() +
+                ", proximityAlertRadius=" + this.getProximityAlertRadius() + ")";
     }
 
     public Location() {

@@ -24,7 +24,7 @@ public class BusinessMessagesDeleted {
 
     private String businessConnectionId;
     private Chat chat;
-    private List<Integer> messageIds;
+    private List<Long> messageIds;
 
     public String getBusinessConnectionId() {
         return businessConnectionId;
@@ -34,7 +34,7 @@ public class BusinessMessagesDeleted {
         return chat;
     }
 
-    public List<Integer> getMessageIds() {
+    public List<Long> getMessageIds() {
         return messageIds;
     }
 
@@ -46,20 +46,20 @@ public class BusinessMessagesDeleted {
         this.chat = chat;
     }
 
-    public void setMessageIds(List<Integer> messageIds) {
+    public void setMessageIds(List<Long> messageIds) {
         this.messageIds = messageIds;
     }
 
     public String toString() {
-        return "BusinessMessagesDeleted(businessConnectionId=" + this.businessConnectionId +
-                ", chat=" + this.chat +
-                ", messageIds=" + this.messageIds + ")";
+        return "BusinessMessagesDeleted(businessConnectionId=" + this.getBusinessConnectionId() +
+                ", chat=" + this.getChat() +
+                ", messageIds=" + this.getMessageIds() + ")";
     }
 
     public BusinessMessagesDeleted() {
     }
 
-    public BusinessMessagesDeleted(String businessConnectionId, Chat chat, List<Integer> messageIds) {
+    public BusinessMessagesDeleted(String businessConnectionId, Chat chat, List<Long> messageIds) {
         this.businessConnectionId = businessConnectionId;
         this.chat = chat;
         this.messageIds = messageIds;

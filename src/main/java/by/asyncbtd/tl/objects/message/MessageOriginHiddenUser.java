@@ -47,9 +47,9 @@ public class MessageOriginHiddenUser implements MessageOrigin {
     }
 
     public String toString() {
-        return "MessageOriginHiddenUser(type=" + this.type +
-                ", data=" + this.data +
-                ", senderUserName=" + this.senderUserName + ")";
+        return "MessageOriginHiddenUser(type=" + this.getType() +
+                ", data=" + this.getData() +
+                ", senderUserName=" + this.getSenderUserName() + ")";
     }
 
     public MessageOriginHiddenUser() {

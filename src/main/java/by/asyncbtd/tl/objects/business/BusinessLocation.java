@@ -40,8 +40,8 @@ public class BusinessLocation {
     }
 
     public String toString() {
-        return "BusinessLocation(address=" + this.address +
-                ", location=" + this.location + ")";
+        return "BusinessLocation(address=" + this.getAddress() +
+                ", location=" + this.getLocation() + ")";
     }
 
     public BusinessLocation() {

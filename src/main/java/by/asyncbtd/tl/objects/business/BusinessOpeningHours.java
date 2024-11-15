@@ -40,8 +40,8 @@ public class BusinessOpeningHours {
     }
 
     public String toString() {
-        return "BusinessOpeningHours(timeZoneName=" + this.timeZoneName +
-                ", openingHours=" + this.openingHours + ")";
+        return "BusinessOpeningHours(timeZoneName=" + this.getTimeZoneName() +
+                ", openingHours=" + this.getOpeningHours() + ")";
     }
 
     public BusinessOpeningHours() {

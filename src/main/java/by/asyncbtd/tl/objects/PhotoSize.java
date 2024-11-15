@@ -65,11 +65,11 @@ public class PhotoSize {
     }
 
     public String toString() {
-        return "PhotoSize(fileId=" + this.fileId +
-                ", fileUniqueId=" + this.fileUniqueId +
-                ", width=" + this.width +
-                ", height=" + this.height +
-                ", fileSize=" + this.fileSize + ")";
+        return "PhotoSize(fileId=" + this.getFileId() +
+                ", fileUniqueId=" + this.getFileUniqueId() +
+                ", width=" + this.getWidth() +
+                ", height=" + this.getHeight() +
+                ", fileSize=" + this.getFileSize() + ")";
     }
 
     public PhotoSize() {

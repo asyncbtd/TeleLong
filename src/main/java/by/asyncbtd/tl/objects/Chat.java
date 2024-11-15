@@ -54,7 +54,7 @@ public class Chat {
     private Boolean joinByRequest;
     private String description;
     private String inviteLink;
-    private Message pinned_message;
+    private Message pinnedMessage;
     private ChatPermissions permissions;
     private Boolean canSendPaidMedia;
     private Integer slowModeDelay;
@@ -94,7 +94,7 @@ public class Chat {
         return lastName;
     }
 
-    public Boolean getForum() {
+    public Boolean getIsForum() {
         return isForum;
     }
 
@@ -186,8 +186,8 @@ public class Chat {
         return inviteLink;
     }
 
-    public Message getPinned_message() {
-        return pinned_message;
+    public Message getPinnedMessage() {
+        return pinnedMessage;
     }
 
     public ChatPermissions getPermissions() {
@@ -270,7 +270,7 @@ public class Chat {
         this.lastName = lastName;
     }
 
-    public void setForum(Boolean forum) {
+    public void setIsForum(Boolean forum) {
         isForum = forum;
     }
 
@@ -362,8 +362,8 @@ public class Chat {
         this.inviteLink = inviteLink;
     }
 
-    public void setPinned_message(Message pinned_message) {
-        this.pinned_message = pinned_message;
+    public void setPinnedMessage(Message pinnedMessage) {
+        this.pinnedMessage = pinnedMessage;
     }
 
     public void setPermissions(ChatPermissions permissions) {
@@ -423,50 +423,50 @@ public class Chat {
     }
 
     public String toString() {
-        return "Chat(id=" + this.id +
-                ", type=" + this.type +
-                ", title=" + this.title +
-                ", username=" + this.username +
-                ", firstName=" + this.firstName +
-                ", lastName=" + this.lastName +
-                ", isForum=" + this.isForum +
-                ", accentColorId=" + this.accentColorId +
-                ", maxReactionCount=" + this.maxReactionCount +
-                ", photo=" + this.photo +
-                ", activeUsernames=" + this.activeUsernames +
-                ", birthdate=" + this.birthdate +
-                ", businessIntro=" + this.businessIntro +
-                ", businessLocation=" + this.businessLocation +
-                ", businessOpeningHours=" + this.businessOpeningHours +
-                ", personalChat=" + this.personalChat +
-                ", availableReactions=" + this.availableReactions +
-                ", backgroundCustomEmojiId=" + this.backgroundCustomEmojiId +
-                ", profileAccentColorId=" + this.profileAccentColorId +
-                ", profileBackgroundCustomEmojiId=" + this.profileBackgroundCustomEmojiId +
-                ", emojiStatusCustomEmojiId=" + this.emojiStatusCustomEmojiId +
-                ", emojiStatusExpirationDate=" + this.emojiStatusExpirationDate +
-                ", bio=" + this.bio +
-                ", hasPrivateForwards=" + this.hasPrivateForwards +
-                ", hasRestrictedVoiceAndVideoMessages=" + this.hasRestrictedVoiceAndVideoMessages +
-                ", joinToSendMessages=" + this.joinToSendMessages +
-                ", joinByRequest=" + this.joinByRequest +
-                ", description=" + this.description +
-                ", inviteLink=" + this.inviteLink +
-                ", pinned_message=" + this.pinned_message +
-                ", permissions=" + this.permissions +
-                ", canSendPaidMedia=" + this.canSendPaidMedia +
-                ", slowModeDelay=" + this.slowModeDelay +
-                ", unrestrictBoostCount=" + this.unrestrictBoostCount +
-                ", messageAutoDeleteTime=" + this.messageAutoDeleteTime +
-                ", hasAggressiveAntiSpamEnabled=" + this.hasAggressiveAntiSpamEnabled +
-                ", hasHiddenMembers=" + this.hasHiddenMembers +
-                ", hasProtectedContent=" + this.hasProtectedContent +
-                ", hasVisibleHistory=" + this.hasVisibleHistory +
-                ", stickerSetName=" + this.stickerSetName +
-                ", canSetStickerSet=" + this.canSetStickerSet +
-                ", customEmojiStickerSetName=" + this.customEmojiStickerSetName +
-                ", linkedChatId=" + this.linkedChatId +
-                ", location=" + this.location + ")";
+        return "Chat(id=" + this.getId() +
+                ", type=" + this.getType() +
+                ", title=" + this.getTitle() +
+                ", username=" + this.getUsername() +
+                ", firstName=" + this.getFirstName() +
+                ", lastName=" + this.getLastName() +
+                ", isForum=" + this.getIsForum() +
+                ", accentColorId=" + this.getAccentColorId() +
+                ", maxReactionCount=" + this.getMaxReactionCount() +
+                ", photo=" + this.getPhoto() +
+                ", activeUsernames=" + this.getActiveUsernames() +
+                ", birthdate=" + this.getBirthdate() +
+                ", businessIntro=" + this.getBusinessIntro() +
+                ", businessLocation=" + this.getBusinessLocation() +
+                ", businessOpeningHours=" + this.getBusinessOpeningHours() +
+                ", personalChat=" + this.getPersonalChat() +
+                ", availableReactions=" + this.getAvailableReactions() +
+                ", backgroundCustomEmojiId=" + this.getBackgroundCustomEmojiId() +
+                ", profileAccentColorId=" + this.getProfileAccentColorId() +
+                ", profileBackgroundCustomEmojiId=" + this.getProfileBackgroundCustomEmojiId() +
+                ", emojiStatusCustomEmojiId=" + this.getEmojiStatusCustomEmojiId() +
+                ", emojiStatusExpirationDate=" + this.getEmojiStatusExpirationDate() +
+                ", bio=" + this.getBio() +
+                ", hasPrivateForwards=" + this.getHasPrivateForwards() +
+                ", hasRestrictedVoiceAndVideoMessages=" + this.getHasRestrictedVoiceAndVideoMessages() +
+                ", joinToSendMessages=" + this.getJoinToSendMessages() +
+                ", joinByRequest=" + this.getJoinByRequest() +
+                ", description=" + this.getDescription() +
+                ", inviteLink=" + this.getInviteLink() +
+                ", pinnedMessage=" + this.getPinnedMessage() +
+                ", permissions=" + this.getPermissions() +
+                ", canSendPaidMedia=" + this.getCanSendPaidMedia() +
+                ", slowModeDelay=" + this.getSlowModeDelay() +
+                ", unrestrictBoostCount=" + this.getUnrestrictBoostCount() +
+                ", messageAutoDeleteTime=" + this.getMessageAutoDeleteTime() +
+                ", hasAggressiveAntiSpamEnabled=" + this.getHasAggressiveAntiSpamEnabled() +
+                ", hasHiddenMembers=" + this.getHasHiddenMembers() +
+                ", hasProtectedContent=" + this.getHasProtectedContent() +
+                ", hasVisibleHistory=" + this.getHasVisibleHistory() +
+                ", stickerSetName=" + this.getStickerSetName() +
+                ", canSetStickerSet=" + this.getCanSetStickerSet() +
+                ", customEmojiStickerSetName=" + this.getCustomEmojiStickerSetName() +
+                ", linkedChatId=" + this.getLinkedChatId() +
+                ", location=" + this.getLocation() + ")";
     }
 
     public Chat() {
@@ -477,7 +477,7 @@ public class Chat {
                 BusinessOpeningHours businessOpeningHours, Chat personalChat, List<ReactionType> availableReactions, String backgroundCustomEmojiId,
                 Integer profileAccentColorId, String profileBackgroundCustomEmojiId, String emojiStatusCustomEmojiId, Integer emojiStatusExpirationDate, String bio,
                 Boolean hasPrivateForwards, Boolean hasRestrictedVoiceAndVideoMessages, Boolean joinToSendMessages, Boolean joinByRequest, String description,
-                String inviteLink, Message pinned_message, ChatPermissions permissions, Boolean canSendPaidMedia, Integer slowModeDelay, Integer unrestrictBoostCount,
+                String inviteLink, Message pinnedMessage, ChatPermissions permissions, Boolean canSendPaidMedia, Integer slowModeDelay, Integer unrestrictBoostCount,
                 Integer messageAutoDeleteTime, Boolean hasAggressiveAntiSpamEnabled, Boolean hasHiddenMembers, Boolean hasProtectedContent, Boolean hasVisibleHistory,
                 String stickerSetName, Boolean canSetStickerSet, String customEmojiStickerSetName, Long linkedChatId, ChatLocation location) {
         this.id = id;
@@ -509,7 +509,7 @@ public class Chat {
         this.joinByRequest = joinByRequest;
         this.description = description;
         this.inviteLink = inviteLink;
-        this.pinned_message = pinned_message;
+        this.pinnedMessage = pinnedMessage;
         this.permissions = permissions;
         this.canSendPaidMedia = canSendPaidMedia;
         this.slowModeDelay = slowModeDelay;

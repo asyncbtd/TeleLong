@@ -24,7 +24,7 @@ public class LinkPreviewOptions {
     private Boolean preferLargeMedia;
     private Boolean showAboveText;
 
-    public Boolean getDisabled() {
+    public Boolean getIsDisabled() {
         return isDisabled;
     }
 
@@ -44,7 +44,7 @@ public class LinkPreviewOptions {
         return showAboveText;
     }
 
-    public void setDisabled(Boolean disabled) {
+    public void setIsDisabled(Boolean disabled) {
         isDisabled = disabled;
     }
 
@@ -65,11 +65,11 @@ public class LinkPreviewOptions {
     }
 
     public String toString() {
-        return "LinkPreviewOptions(isDisabled=" + this.isDisabled +
-                ", url=" + this.url +
-                ", preferSmallMedia=" + this.preferSmallMedia +
-                ", preferLargeMedia=" + this.preferLargeMedia +
-                ", showAboveText=" + this.showAboveText + ")";
+        return "LinkPreviewOptions(isDisabled=" + this.getIsDisabled() +
+                ", url=" + this.getUrl() +
+                ", preferSmallMedia=" + this.getPreferSmallMedia() +
+                ", preferLargeMedia=" + this.getPreferLargeMedia() +
+                ", showAboveText=" + this.getShowAboveText() + ")";
     }
 
     public LinkPreviewOptions() {

@@ -23,7 +23,7 @@ public class MessageOriginChat implements MessageOrigin {
     private String type;
     private Integer data;
     private Chat senderChat;
-    private String author_signature;
+    private String authorSignature;
 
     public String getType() {
         return type;
@@ -37,8 +37,8 @@ public class MessageOriginChat implements MessageOrigin {
         return senderChat;
     }
 
-    public String getAuthor_signature() {
-        return author_signature;
+    public String getAuthorSignature() {
+        return authorSignature;
     }
 
     public void setType(String type) {
@@ -53,24 +53,24 @@ public class MessageOriginChat implements MessageOrigin {
         this.senderChat = senderChat;
     }
 
-    public void setAuthor_signature(String author_signature) {
-        this.author_signature = author_signature;
+    public void setAuthor_signature(String authorSignature) {
+        this.authorSignature = authorSignature;
     }
 
     public String toString() {
-        return "MessageOriginChat(type=" + this.type +
-                ", data=" + this.data +
-                ", senderChat=" + this.senderChat +
-                ", author_signature=" + this.author_signature + ")";
+        return "MessageOriginChat(type=" + this.getType() +
+                ", data=" + this.getData() +
+                ", senderChat=" + this.getSenderChat() +
+                ", author_signature=" + this.authorSignature + ")";
     }
 
     public MessageOriginChat() {
     }
 
-    public MessageOriginChat(String type, Integer data, Chat senderChat, String author_signature) {
+    public MessageOriginChat(String type, Integer data, Chat senderChat, String authorSignature) {
         this.type = type;
         this.data = data;
         this.senderChat = senderChat;
-        this.author_signature = author_signature;
+        this.authorSignature = authorSignature;
     }
 }

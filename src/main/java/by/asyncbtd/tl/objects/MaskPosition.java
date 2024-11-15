@@ -56,10 +56,10 @@ public class MaskPosition {
     }
 
     public String toString() {
-        return "MaskPosition(point=" + this.point +
-                ", xShift=" + this.xShift +
-                ", yShift=" + this.yShift +
-                ", scale=" + this.scale + ")";
+        return "MaskPosition(point=" + this.getPoint() +
+                ", xShift=" + this.getxShift() +
+                ", yShift=" + this.getyShift() +
+                ", scale=" + this.getScale() + ")";
     }
 
     public MaskPosition() {

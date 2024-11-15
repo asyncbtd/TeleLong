@@ -146,20 +146,20 @@ public class ChatPermissions {
     }
 
     public String toString() {
-        return "ChatPermissions(canSendMessage=" + this.canSendMessage +
-                ", canSendAudios=" + this.canSendAudios +
-                ", canSendDocuments=" + this.canSendDocuments +
-                ", canSendPhotos=" + this.canSendPhotos +
-                ", canSendVideos=" + this.canSendVideos +
-                ", canSendVideoNotes=" + this.canSendVideoNotes +
-                ", canSendVoiceNotes=" + this.canSendVoiceNotes +
-                ", canSendPolls=" + this.canSendPolls +
-                ", canSendOtherMessages=" + this.canSendOtherMessages +
-                ", canAddWebPagePreviews=" + this.canAddWebPagePreviews +
-                ", canChangeInfo=" + this.canChangeInfo +
-                ", canInviteUsers=" + this.canInviteUsers +
-                ", canPinMessages=" + this.canPinMessages +
-                ", canManageTopics=" + this.canManageTopics + ")";
+        return "ChatPermissions(canSendMessage=" + this.getCanSendMessage() +
+                ", canSendAudios=" + this.getCanSendAudios() +
+                ", canSendDocuments=" + this.getCanSendDocuments() +
+                ", canSendPhotos=" + this.getCanSendPhotos() +
+                ", canSendVideos=" + this.getCanSendVideos() +
+                ", canSendVideoNotes=" + this.getCanSendVideoNotes() +
+                ", canSendVoiceNotes=" + this.getCanSendVoiceNotes() +
+                ", canSendPolls=" + this.getCanSendPolls() +
+                ", canSendOtherMessages=" + this.getCanSendOtherMessages() +
+                ", canAddWebPagePreviews=" + this.getCanAddWebPagePreviews() +
+                ", canChangeInfo=" + this.getCanChangeInfo() +
+                ", canInviteUsers=" + this.getCanInviteUsers() +
+                ", canPinMessages=" + this.getCanPinMessages() +
+                ", canManageTopics=" + this.getCanManageTopics() + ")";
     }
 
     public ChatPermissions() {

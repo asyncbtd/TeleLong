@@ -49,9 +49,9 @@ public class BusinessIntro {
     }
 
     public String toString() {
-        return "BusinessIntro(title=" + this.title +
-                ", message=" + this.message +
-                ", sticker=" + this.sticker + ")";
+        return "BusinessIntro(title=" + this.getTitle() +
+                ", message=" + this.getMessage() +
+                ", sticker=" + this.getSticker() + ")";
     }
 
     public BusinessIntro() {

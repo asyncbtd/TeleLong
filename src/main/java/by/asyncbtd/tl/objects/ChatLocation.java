@@ -22,8 +22,8 @@ public class ChatLocation {
     }
 
     public String toString() {
-        return "ChatLocation(location=" + this.location +
-                ", address=" + this.address + ")";
+        return "ChatLocation(location=" + this.getLocation() +
+                ", address=" + this.getAddress() + ")";
     }
 
     public ChatLocation(){

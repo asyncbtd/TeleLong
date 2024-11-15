@@ -56,11 +56,11 @@ public class Sticker {
         return height;
     }
 
-    public Boolean getAnimated() {
+    public Boolean getIsAnimated() {
         return isAnimated;
     }
 
-    public Boolean getVideo() {
+    public Boolean getIsVideo() {
         return isVideo;
     }
 
@@ -116,11 +116,11 @@ public class Sticker {
         this.height = height;
     }
 
-    public void setAnimated(Boolean animated) {
+    public void setIsAnimated(Boolean animated) {
         isAnimated = animated;
     }
 
-    public void setVideo(Boolean video) {
+    public void setIsVideo(Boolean video) {
         isVideo = video;
     }
 
@@ -157,21 +157,21 @@ public class Sticker {
     }
 
     public String toSring() {
-        return "Sticker(fileId=" + this.fileId +
-                ", fileUniqueId=" + this.fileUniqueId +
-                ", type=" + this.type +
-                ", width=" + this.width +
-                ", height=" + this.height +
-                ", isAnimated=" + this.isAnimated +
-                ", isVideo=" + this.isVideo +
-                ", thumbnail=" + this.thumbnail +
-                ", emoji=" + this.emoji +
-                ", setName=" + this.setName +
-                ", premiumAnimation=" + this.premiumAnimation +
-                ", maskPosition=" + this.maskPosition +
-                ", customEmojiId=" + this.customEmojiId +
-                ", needsRepainting=" + this.needsRepainting +
-                ", fileSize=" + this.fileSize + ")";
+        return "Sticker(fileId=" + this.getFileId() +
+                ", fileUniqueId=" + this.getFileUniqueId() +
+                ", type=" + this.getType() +
+                ", width=" + this.getWidth() +
+                ", height=" + this.getHeight() +
+                ", isAnimated=" + this.getIsAnimated() +
+                ", isVideo=" + this.getIsVideo() +
+                ", thumbnail=" + this.getThumbnail() +
+                ", emoji=" + this.getEmoji() +
+                ", setName=" + this.getSetName() +
+                ", premiumAnimation=" + this.getPremiumAnimation() +
+                ", maskPosition=" + this.getMaskPosition() +
+                ", customEmojiId=" + this.getCustomEmojiId() +
+                ", needsRepainting=" + this.getNeedsRepainting() +
+                ", fileSize=" + this.getFileSize() + ")";
     }
 
     public Sticker() {

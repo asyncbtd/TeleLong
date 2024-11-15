@@ -38,8 +38,8 @@ public class ReactionType {
     }
 
     public String toString() {
-        return "ReactionType(type=" + this.type +
-                ", emoji=" + this.emoji + ")";
+        return "ReactionType(type=" + this.getType() +
+                ", emoji=" + this.getEmoji() + ")";
     }
 
     public ReactionType() {

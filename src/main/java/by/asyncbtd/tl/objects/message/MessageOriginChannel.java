@@ -67,11 +67,11 @@ public class MessageOriginChannel implements MessageOrigin {
     }
 
     public String toString() {
-        return "MessageOriginChannel(type=" + this.type +
-                ", date=" + this.date +
-                ", chat=" + this.chat +
-                ", messageId=" + this.messageId +
-                ", authorSignature=" + this.authorSignature + ")";
+        return "MessageOriginChannel(type=" + this.getType() +
+                ", date=" + this.getDate() +
+                ", chat=" + this.getChat() +
+                ", messageId=" + this.getMessageId() +
+                ", authorSignature=" + this.getAuthorSignature() + ")";
     }
 
     public MessageOriginChannel() {

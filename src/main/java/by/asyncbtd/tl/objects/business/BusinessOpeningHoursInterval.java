@@ -38,8 +38,8 @@ public class BusinessOpeningHoursInterval {
     }
 
     public String toString() {
-        return "BusinessOpeningHoursInterval(openingMinute=" + this.openingMinute +
-                ", closingMinute=" + this.closingMinute + ")";
+        return "BusinessOpeningHoursInterval(openingMinute=" + this.getOpeningMinute() +
+                ", closingMinute=" + this.getClosingMinute() + ")";
     }
 
     public BusinessOpeningHoursInterval() {

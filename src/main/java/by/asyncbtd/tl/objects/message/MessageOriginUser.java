@@ -50,9 +50,9 @@ public class MessageOriginUser implements MessageOrigin {
 
     @Override
     public String toString() {
-        return "MessageOriginUser(type=" + this.type +
-                ", date=" + this.date +
-                ", senderUser=" + this.senderUser + ")";
+        return "MessageOriginUser(type=" + this.getType() +
+                ", date=" + this.getDate()+
+                ", senderUser=" + this.getSenderUser() + ")";
     }
 
     public MessageOriginUser() {

@@ -101,15 +101,15 @@ public class Animation {
     }
 
     public String toString() {
-        return "Animation(fileId=" + this.fileId +
-                ", fileUniqueId=" + this.fileUniqueId +
-                ", width=" + this.width +
-                ", height=" + this.height +
-                ", duration=" + this.duration +
-                ", thumbnail=" + this.thumbnail +
-                ", fileName=" + this.fileName +
-                ", mimeType=" + this.mimeType +
-                ", fileSize=" + this.fileSize + ")";
+        return "Animation(fileId=" + this.getFileId() +
+                ", fileUniqueId=" + this.getFileUniqueId() +
+                ", width=" + this.getWidth() +
+                ", height=" + this.getHeight() +
+                ", duration=" + this.getDuration() +
+                ", thumbnail=" + this.getThumbnail() +
+                ", fileName=" + this.getFileName() +
+                ", mimeType=" + this.getMimeType() +
+                ", fileSize=" + this.getFileSize() + ")";
     }
 
     public Animation() {

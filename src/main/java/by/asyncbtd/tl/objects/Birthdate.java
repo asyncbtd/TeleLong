@@ -47,9 +47,9 @@ public class Birthdate {
     }
 
     public String toString() {
-        return "Birthdate(day=" + this.day +
-                ", month=" + this.month +
-                ", year=" + this.year + ")";
+        return "Birthdate(day=" + this.getDay() +
+                ", month=" + this.getMonth() +
+                ", year=" + this.getYear() + ")";
     }
 
     public Birthdate() {

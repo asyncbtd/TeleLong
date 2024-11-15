@@ -101,15 +101,15 @@ public class Audio {
     }
 
     public String toString() {
-        return "Audio(fileId=" + this.fileId +
-                ", fileUniqueId=" + this.fileUniqueId +
-                ", duration=" + this.duration +
-                ", performer=" + this.performer +
-                ", title=" + this.title +
-                ", fileName=" + this.fileName +
-                ", mimeType=" + this.mimeType +
-                ", fileSize=" + this.fileSize +
-                ", thumbnail=" + this.thumbnail + ")";
+        return "Audio(fileId=" + this.getFileId() +
+                ", fileUniqueId=" + this.getFileUniqueId() +
+                ", duration=" + this.getDuration() +
+                ", performer=" + this.getPerformer() +
+                ", title=" + this.getTitle() +
+                ", fileName=" + this.getFileName() +
+                ", mimeType=" + this.getMimeType() +
+                ", fileSize=" + this.getFileSize() +
+                ", thumbnail=" + this.getThumbnail() + ")";
     }
 
     public Audio() {

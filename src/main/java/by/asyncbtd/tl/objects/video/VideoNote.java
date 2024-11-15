@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.video;
+
+import by.asyncbtd.tl.objects.PhotoSize;
 
 public class VideoNote {
 

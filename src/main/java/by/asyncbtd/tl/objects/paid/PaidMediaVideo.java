@@ -16,7 +16,7 @@
 
 package by.asyncbtd.tl.objects.paid;
 
-import by.asyncbtd.tl.objects.Video;
+import by.asyncbtd.tl.objects.video.Video;
 
 public class PaidMediaVideo implements PaidMedia {
 

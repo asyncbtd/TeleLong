@@ -21,6 +21,8 @@ import by.asyncbtd.tl.objects.game.Giveaway;
 import by.asyncbtd.tl.objects.game.GiveawayWinners;
 import by.asyncbtd.tl.objects.message.MessageOrigin;
 import by.asyncbtd.tl.objects.paid.PaidMediaInfo;
+import by.asyncbtd.tl.objects.video.Video;
+import by.asyncbtd.tl.objects.video.VideoNote;
 
 import java.util.List;
 

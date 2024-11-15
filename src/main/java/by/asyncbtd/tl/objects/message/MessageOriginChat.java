@@ -58,10 +58,10 @@ public class MessageOriginChat {
     }
 
     public String toString() {
-        return "MessageOriginChat(type='" + this.type +
+        return "MessageOriginChat(type=" + this.type +
                 ", data=" + this.data +
                 ", senderChat=" + this.senderChat +
-                ", author_signature='" + this.author_signature + ")";
+                ", author_signature=" + this.author_signature + ")";
     }
 
     public MessageOriginChat() {

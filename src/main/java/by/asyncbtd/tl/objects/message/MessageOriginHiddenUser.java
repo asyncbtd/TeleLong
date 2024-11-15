@@ -49,7 +49,7 @@ public class MessageOriginHiddenUser {
     public String toString() {
         return "MessageOriginHiddenUser(type=" + this.type +
                 ", data=" + this.data +
-                ", senderUserName='" + this.senderUserName + ")";
+                ", senderUserName=" + this.senderUserName + ")";
     }
 
     public MessageOriginHiddenUser() {

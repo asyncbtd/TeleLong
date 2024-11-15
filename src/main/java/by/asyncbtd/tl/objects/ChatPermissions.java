@@ -1,0 +1,186 @@
+/*
+ * Copyright 2024 asyncbtd
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package by.asyncbtd.tl.objects;
+
+public class ChatPermissions {
+
+    private Boolean canSendMessage;
+    private Boolean canSendAudios;
+    private Boolean canSendDocuments;
+    private Boolean canSendPhotos;
+    private Boolean canSendVideos;
+    private Boolean canSendVideoNotes;
+    private Boolean canSendVoiceNotes;
+    private Boolean canSendPolls;
+    private Boolean canSendOtherMessages;
+    private Boolean canAddWebPagePreviews;
+    private Boolean canChangeInfo;
+    private Boolean canInviteUsers;
+    private Boolean canPinMessages;
+    private Boolean canManageTopics;
+
+    public Boolean getCanSendMessage() {
+        return canSendMessage;
+    }
+
+    public Boolean getCanSendAudios() {
+        return canSendAudios;
+    }
+
+    public Boolean getCanSendDocuments() {
+        return canSendDocuments;
+    }
+
+    public Boolean getCanSendPhotos() {
+        return canSendPhotos;
+    }
+
+    public Boolean getCanSendVideos() {
+        return canSendVideos;
+    }
+
+    public Boolean getCanSendVideoNotes() {
+        return canSendVideoNotes;
+    }
+
+    public Boolean getCanSendVoiceNotes() {
+        return canSendVoiceNotes;
+    }
+
+    public Boolean getCanSendPolls() {
+        return canSendPolls;
+    }
+
+    public Boolean getCanSendOtherMessages() {
+        return canSendOtherMessages;
+    }
+
+    public Boolean getCanAddWebPagePreviews() {
+        return canAddWebPagePreviews;
+    }
+
+    public Boolean getCanChangeInfo() {
+        return canChangeInfo;
+    }
+
+    public Boolean getCanInviteUsers() {
+        return canInviteUsers;
+    }
+
+    public Boolean getCanPinMessages() {
+        return canPinMessages;
+    }
+
+    public Boolean getCanManageTopics() {
+        return canManageTopics;
+    }
+
+    public void setCanSendMessage(Boolean canSendMessage) {
+        this.canSendMessage = canSendMessage;
+    }
+
+    public void setCanSendAudios(Boolean canSendAudios) {
+        this.canSendAudios = canSendAudios;
+    }
+
+    public void setCanSendDocuments(Boolean canSendDocuments) {
+        this.canSendDocuments = canSendDocuments;
+    }
+
+    public void setCanSendPhotos(Boolean canSendPhotos) {
+        this.canSendPhotos = canSendPhotos;
+    }
+
+    public void setCanSendVideos(Boolean canSendVideos) {
+        this.canSendVideos = canSendVideos;
+    }
+
+    public void setCanSendVideoNotes(Boolean canSendVideoNotes) {
+        this.canSendVideoNotes = canSendVideoNotes;
+    }
+
+    public void setCanSendVoiceNotes(Boolean canSendVoiceNotes) {
+        this.canSendVoiceNotes = canSendVoiceNotes;
+    }
+
+    public void setCanSendPolls(Boolean canSendPolls) {
+        this.canSendPolls = canSendPolls;
+    }
+
+    public void setCanSendOtherMessages(Boolean canSendOtherMessages) {
+        this.canSendOtherMessages = canSendOtherMessages;
+    }
+
+    public void setCanAddWebPagePreviews(Boolean canAddWebPagePreviews) {
+        this.canAddWebPagePreviews = canAddWebPagePreviews;
+    }
+
+    public void setCanChangeInfo(Boolean canChangeInfo) {
+        this.canChangeInfo = canChangeInfo;
+    }
+
+    public void setCanInviteUsers(Boolean canInviteUsers) {
+        this.canInviteUsers = canInviteUsers;
+    }
+
+    public void setCanPinMessages(Boolean canPinMessages) {
+        this.canPinMessages = canPinMessages;
+    }
+
+    public void setCanManageTopics(Boolean canManageTopics) {
+        this.canManageTopics = canManageTopics;
+    }
+
+    public String toString() {
+        return "ChatPermissions(canSendMessage=" + this.canSendMessage +
+                ", canSendAudios=" + this.canSendAudios +
+                ", canSendDocuments=" + this.canSendDocuments +
+                ", canSendPhotos=" + this.canSendPhotos +
+                ", canSendVideos=" + this.canSendVideos +
+                ", canSendVideoNotes=" + this.canSendVideoNotes +
+                ", canSendVoiceNotes=" + this.canSendVoiceNotes +
+                ", canSendPolls=" + this.canSendPolls +
+                ", canSendOtherMessages=" + this.canSendOtherMessages +
+                ", canAddWebPagePreviews=" + this.canAddWebPagePreviews +
+                ", canChangeInfo=" + this.canChangeInfo +
+                ", canInviteUsers=" + this.canInviteUsers +
+                ", canPinMessages=" + this.canPinMessages +
+                ", canManageTopics=" + this.canManageTopics + ")";
+    }
+
+    public ChatPermissions() {
+    }
+
+    public ChatPermissions(Boolean canSendMessage, Boolean canSendAudios, Boolean canSendDocuments, Boolean canSendPhotos, Boolean canSendVideos, Boolean canSendVideoNotes,
+                           Boolean canSendVoiceNotes, Boolean canSendPolls, Boolean canSendOtherMessages, Boolean canAddWebPagePreviews, Boolean canChangeInfo,
+                           Boolean canInviteUsers, Boolean canPinMessages, Boolean canManageTopics) {
+        this.canSendMessage = canSendMessage;
+        this.canSendAudios = canSendAudios;
+        this.canSendDocuments = canSendDocuments;
+        this.canSendPhotos = canSendPhotos;
+        this.canSendVideos = canSendVideos;
+        this.canSendVideoNotes = canSendVideoNotes;
+        this.canSendVoiceNotes = canSendVoiceNotes;
+        this.canSendPolls = canSendPolls;
+        this.canSendOtherMessages = canSendOtherMessages;
+        this.canAddWebPagePreviews = canAddWebPagePreviews;
+        this.canChangeInfo = canChangeInfo;
+        this.canInviteUsers = canInviteUsers;
+        this.canPinMessages = canPinMessages;
+        this.canManageTopics = canManageTopics;
+    }
+}

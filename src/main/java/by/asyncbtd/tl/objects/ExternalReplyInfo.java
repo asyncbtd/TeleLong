@@ -16,6 +16,9 @@
 
 package by.asyncbtd.tl.objects;
 
+import by.asyncbtd.tl.objects.game.Game;
+import by.asyncbtd.tl.objects.game.Giveaway;
+import by.asyncbtd.tl.objects.game.GiveawayWinners;
 import by.asyncbtd.tl.objects.message.MessageOrigin;
 import by.asyncbtd.tl.objects.paid.PaidMediaInfo;
 

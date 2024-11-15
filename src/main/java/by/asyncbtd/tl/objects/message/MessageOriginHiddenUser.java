@@ -16,7 +16,7 @@
 
 package by.asyncbtd.tl.objects.message;
 
-public class MessageOriginHiddenUser {
+public class MessageOriginHiddenUser implements MessageOrigin {
 
     private String type;
     private Integer data;

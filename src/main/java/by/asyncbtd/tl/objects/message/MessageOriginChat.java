@@ -18,7 +18,7 @@ package by.asyncbtd.tl.objects.message;
 
 import by.asyncbtd.tl.objects.Chat;
 
-public class MessageOriginChat {
+public class MessageOriginChat implements MessageOrigin {
 
     private String type;
     private Integer data;

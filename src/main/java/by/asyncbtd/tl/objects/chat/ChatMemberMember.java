@@ -18,7 +18,7 @@ package by.asyncbtd.tl.objects.chat;
 
 import by.asyncbtd.tl.objects.User;
 
-public class ChatMemberMember {
+public class ChatMemberMember implements ChatMember {
 
     private String status;
     private User user;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects.chat;
+package by.asyncbtd.tl.objects.chat.member;
 
 import by.asyncbtd.tl.objects.User;
 

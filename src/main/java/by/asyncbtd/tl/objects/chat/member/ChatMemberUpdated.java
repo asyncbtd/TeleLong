@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects.chat;
+package by.asyncbtd.tl.objects.chat.member;
 
 import by.asyncbtd.tl.objects.User;
+import by.asyncbtd.tl.objects.chat.Chat;
+import by.asyncbtd.tl.objects.chat.ChatInviteLink;
 
 public class ChatMemberUpdated {
 

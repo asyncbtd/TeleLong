@@ -14,15 +14,14 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects.chat;
+package by.asyncbtd.tl.objects.chat.member;
 
 import by.asyncbtd.tl.objects.User;
 
-public class ChatMemberBanned implements ChatMember {
+public class ChatMemberLeft implements ChatMember {
 
     private String status;
     private User user;
-    private Integer untilDate;
 
     public String getStatus() {
         return status;
@@ -30,10 +29,6 @@ public class ChatMemberBanned implements ChatMember {
 
     public User getUser() {
         return user;
-    }
-
-    public Integer getUntilDate() {
-        return untilDate;
     }
 
     public void setStatus(String status) {
@@ -44,22 +39,16 @@ public class ChatMemberBanned implements ChatMember {
         this.user = user;
     }
 
-    public void setUntilDate(Integer untilDate) {
-        this.untilDate = untilDate;
-    }
-
     public String toString() {
-        return "ChatMemberBanned(status=" + this.getStatus() +
-                ", user=" + this.getUser() +
-                ", untilDate=" + this.getUntilDate() + ")";
+        return "ChatMemberLeft(status=" + this.getStatus() +
+                ", user=" + this.getUser() + ")";
     }
 
-    public ChatMemberBanned() {
+    public ChatMemberLeft() {
     }
 
-    public ChatMemberBanned(String status, User user, Integer untilDate) {
+    public ChatMemberLeft(String status, User user) {
         this.status = status;
         this.user = user;
-        this.untilDate = untilDate;
     }
 }

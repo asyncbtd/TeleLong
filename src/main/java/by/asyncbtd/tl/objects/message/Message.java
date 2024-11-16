@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.message;
 
+import by.asyncbtd.tl.objects.*;
 import by.asyncbtd.tl.objects.background.ChatBackground;
 import by.asyncbtd.tl.objects.forum.*;
 import by.asyncbtd.tl.objects.game.*;
 import by.asyncbtd.tl.objects.keyboard.InlineKeyboardMarkup;
-import by.asyncbtd.tl.objects.message.MessageOrigin;
 import by.asyncbtd.tl.objects.paid.PaidMediaInfo;
 import by.asyncbtd.tl.objects.video.*;
 import by.asyncbtd.tl.objects.web.WebAppData;
@@ -43,7 +43,7 @@ public class Message implements MaybeInaccessibleMessage {
     private Boolean isAutomaticForward;
     private Message replyToMessage;
     private ExternalReplyInfo externalReply;
-    private	TextQuote quote;
+    private TextQuote quote;
     private Story replyToStory;
     private User viaBot;
     private Integer editData;

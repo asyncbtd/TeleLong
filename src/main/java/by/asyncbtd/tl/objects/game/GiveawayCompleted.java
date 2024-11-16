@@ -16,7 +16,7 @@
 
 package by.asyncbtd.tl.objects.game;
 
-import by.asyncbtd.tl.objects.Message;
+import by.asyncbtd.tl.objects.message.Message;
 
 public class GiveawayCompleted {
 

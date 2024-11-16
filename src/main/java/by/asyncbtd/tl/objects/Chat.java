@@ -19,6 +19,7 @@ package by.asyncbtd.tl.objects;
 import by.asyncbtd.tl.objects.business.BusinessIntro;
 import by.asyncbtd.tl.objects.business.BusinessLocation;
 import by.asyncbtd.tl.objects.business.BusinessOpeningHours;
+import by.asyncbtd.tl.objects.message.Message;
 import by.asyncbtd.tl.objects.reaction.ReactionType;
 
 import java.util.List;

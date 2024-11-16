@@ -14,26 +14,32 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.video;
 
-public interface MaybeInaccessibleMessage {
-    String DATE_FIELD = "date";
+import by.asyncbtd.tl.objects.User;
 
-    default boolean isUserMessage() {
-        return true;
+import java.util.List;
+
+public class VideoChatParticipantsInvited {
+
+    private List<User> users;
+
+    public List<User> getUsers() {
+        return users;
     }
 
-    default boolean isGroupMessage() {
-        return false;
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 
-    default boolean isSuperGroupMessage() {
-        return false;
+    public String toString() {
+        return "VideoChatParticipantsInvited(users=" + this.getUsers() + ")";
     }
 
-    Long getChatId();
+    public VideoChatParticipantsInvited() {
+    }
 
-    Integer getMessageId();
-
-    Integer getDate();
+    public VideoChatParticipantsInvited(List<User> users) {
+        this.users = users;
+    }
 }

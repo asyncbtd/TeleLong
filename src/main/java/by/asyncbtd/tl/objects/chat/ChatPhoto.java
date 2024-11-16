@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.chat;
 
 public class ChatPhoto {
 

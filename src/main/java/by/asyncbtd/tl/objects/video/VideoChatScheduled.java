@@ -14,41 +14,28 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.video;
 
-import by.asyncbtd.tl.objects.chat.Chat;
+public class VideoChatScheduled {
 
-public class Story {
+    private Integer startDate;
 
-    private Chat chat;
-    private Long id;
-
-    public Chat getChat() {
-        return chat;
+    public Integer getStartDate() {
+        return startDate;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setChat(Chat chat) {
-        this.chat = chat;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setStartDate(Integer startDate) {
+        this.startDate = startDate;
     }
 
     public String toString() {
-        return "Story(chat=" + this.getChat() +
-                ", id=" + this.getId() + ")";
+        return "VideoChatScheduled(startDate=" + this.getStartDate() + ")";
     }
 
-    public Story() {
+    public VideoChatScheduled() {
     }
 
-    public Story(Chat chat, Long id) {
-        this.chat = chat;
-        this.id = id;
+    public VideoChatScheduled(Integer startDate) {
+        this.startDate = startDate;
     }
 }

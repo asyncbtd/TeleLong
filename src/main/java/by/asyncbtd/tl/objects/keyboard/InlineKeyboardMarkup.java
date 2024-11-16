@@ -14,41 +14,30 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.keyboard;
 
-import by.asyncbtd.tl.objects.chat.Chat;
+import java.util.List;
 
-public class Story {
+public class InlineKeyboardMarkup {
 
-    private Chat chat;
-    private Long id;
+    private List<List<InlineKeyboardButton>> inlineKeyboard;
 
-    public Chat getChat() {
-        return chat;
+    public List<List<InlineKeyboardButton>> getInlineKeyboard() {
+        return inlineKeyboard;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setChat(Chat chat) {
-        this.chat = chat;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setInlineKeyboard(List<List<InlineKeyboardButton>> inlineKeyboard) {
+        this.inlineKeyboard = inlineKeyboard;
     }
 
     public String toString() {
-        return "Story(chat=" + this.getChat() +
-                ", id=" + this.getId() + ")";
+        return "InlineKeyboardMarkup(inlineKeyboard=" + this.getInlineKeyboard() + ")";
     }
 
-    public Story() {
+    public InlineKeyboardMarkup() {
     }
 
-    public Story(Chat chat, Long id) {
-        this.chat = chat;
-        this.id = id;
+    public InlineKeyboardMarkup(List<List<InlineKeyboardButton>> inlineKeyboard) {
+        this.inlineKeyboard = inlineKeyboard;
     }
 }

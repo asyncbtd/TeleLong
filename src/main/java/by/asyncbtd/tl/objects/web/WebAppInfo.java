@@ -14,41 +14,28 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.web;
 
-import by.asyncbtd.tl.objects.chat.Chat;
+public class WebAppInfo {
 
-public class Story {
+    private String url;
 
-    private Chat chat;
-    private Long id;
-
-    public Chat getChat() {
-        return chat;
+    public String getUrl() {
+        return url;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setChat(Chat chat) {
-        this.chat = chat;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String toString() {
-        return "Story(chat=" + this.getChat() +
-                ", id=" + this.getId() + ")";
+        return "WebAppInfo(url=" + this.getUrl() + ")";
     }
 
-    public Story() {
+    public WebAppInfo() {
     }
 
-    public Story(Chat chat, Long id) {
-        this.chat = chat;
-        this.id = id;
+    public WebAppInfo(String url) {
+        this.url = url;
     }
 }

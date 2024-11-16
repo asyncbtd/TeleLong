@@ -16,6 +16,8 @@
 
 package by.asyncbtd.tl.objects;
 
+import by.asyncbtd.tl.objects.message.MessageEntity;
+
 import java.util.List;
 
 public class PollOption {

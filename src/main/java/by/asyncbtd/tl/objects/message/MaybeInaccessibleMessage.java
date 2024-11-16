@@ -14,41 +14,26 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.message;
 
-import by.asyncbtd.tl.objects.chat.Chat;
+public interface MaybeInaccessibleMessage {
+    String DATE_FIELD = "date";
 
-public class Story {
-
-    private Chat chat;
-    private Long id;
-
-    public Chat getChat() {
-        return chat;
+    default boolean isUserMessage() {
+        return true;
     }
 
-    public Long getId() {
-        return id;
+    default boolean isGroupMessage() {
+        return false;
     }
 
-    public void setChat(Chat chat) {
-        this.chat = chat;
+    default boolean isSuperGroupMessage() {
+        return false;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    Long getChatId();
 
-    public String toString() {
-        return "Story(chat=" + this.getChat() +
-                ", id=" + this.getId() + ")";
-    }
+    Integer getMessageId();
 
-    public Story() {
-    }
-
-    public Story(Chat chat, Long id) {
-        this.chat = chat;
-        this.id = id;
-    }
+    Integer getDate();
 }

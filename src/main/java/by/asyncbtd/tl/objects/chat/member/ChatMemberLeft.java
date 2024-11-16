@@ -14,41 +14,41 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects.paid;
+package by.asyncbtd.tl.objects.chat.member;
 
-import by.asyncbtd.tl.objects.video.Video;
+import by.asyncbtd.tl.objects.User;
 
-public class PaidMediaVideo implements PaidMedia {
+public class ChatMemberLeft implements ChatMember {
 
-    private String type;
-    private Video video;
+    private String status;
+    private User user;
 
-    public String getType() {
-        return type;
+    public String getStatus() {
+        return status;
     }
 
-    public Video getVideo() {
-        return video;
+    public User getUser() {
+        return user;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public void setVideo(Video video) {
-        this.video = video;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public String toString() {
-        return "PaidMediaVideo(type=" + this.getType() +
-                ", video=" + this.getVideo() + ")";
+        return "ChatMemberLeft(status=" + this.getStatus() +
+                ", user=" + this.getUser() + ")";
     }
 
-    public PaidMediaVideo() {
+    public ChatMemberLeft() {
     }
 
-    public PaidMediaVideo(String type, Video video) {
-        this.type = type;
-        this.video = video;
+    public ChatMemberLeft(String status, User user) {
+        this.status = status;
+        this.user = user;
     }
 }

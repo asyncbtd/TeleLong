@@ -14,11 +14,16 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.chat.member;
 
-public class ChatPermissions {
+import by.asyncbtd.tl.objects.User;
 
-    private Boolean canSendMessage;
+public class ChatMemberRestricted implements ChatMember {
+
+    private String status;
+    private User user;
+    private Boolean isMember;
+    private Boolean canSendMessages;
     private Boolean canSendAudios;
     private Boolean canSendDocuments;
     private Boolean canSendPhotos;
@@ -32,9 +37,22 @@ public class ChatPermissions {
     private Boolean canInviteUsers;
     private Boolean canPinMessages;
     private Boolean canManageTopics;
+    private Integer untilDate;
 
-    public Boolean getCanSendMessage() {
-        return canSendMessage;
+    public String getStatus() {
+        return status;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public Boolean getIsMember() {
+        return isMember;
+    }
+
+    public Boolean getCanSendMessages() {
+        return canSendMessages;
     }
 
     public Boolean getCanSendAudios() {
@@ -89,8 +107,24 @@ public class ChatPermissions {
         return canManageTopics;
     }
 
-    public void setCanSendMessage(Boolean canSendMessage) {
-        this.canSendMessage = canSendMessage;
+    public Integer getUntilDate() {
+        return untilDate;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public void setIsMember(Boolean isMember) {
+        this.isMember = isMember;
+    }
+
+    public void setCanSendMessages(Boolean canSendMessages) {
+        this.canSendMessages = canSendMessages;
     }
 
     public void setCanSendAudios(Boolean canSendAudios) {
@@ -145,8 +179,15 @@ public class ChatPermissions {
         this.canManageTopics = canManageTopics;
     }
 
+    public void setUntilDate(Integer untilDate) {
+        this.untilDate = untilDate;
+    }
+
     public String toString() {
-        return "ChatPermissions(canSendMessage=" + this.getCanSendMessage() +
+        return "ChatMemberRestricted(status=" + this.getStatus() +
+                ", user=" + this.getUser() +
+                ", isMember=" + this.getIsMember() +
+                ", canSendMessages=" + this.getCanSendMessages() +
                 ", canSendAudios=" + this.getCanSendAudios() +
                 ", canSendDocuments=" + this.getCanSendDocuments() +
                 ", canSendPhotos=" + this.getCanSendPhotos() +
@@ -159,16 +200,21 @@ public class ChatPermissions {
                 ", canChangeInfo=" + this.getCanChangeInfo() +
                 ", canInviteUsers=" + this.getCanInviteUsers() +
                 ", canPinMessages=" + this.getCanPinMessages() +
-                ", canManageTopics=" + this.getCanManageTopics() + ")";
+                ", canManageTopics=" + this.getCanManageTopics() +
+                ", untilDate=" + this.getUntilDate() + ")";
     }
 
-    public ChatPermissions() {
+    public ChatMemberRestricted() {
     }
 
-    public ChatPermissions(Boolean canSendMessage, Boolean canSendAudios, Boolean canSendDocuments, Boolean canSendPhotos, Boolean canSendVideos, Boolean canSendVideoNotes,
-                           Boolean canSendVoiceNotes, Boolean canSendPolls, Boolean canSendOtherMessages, Boolean canAddWebPagePreviews, Boolean canChangeInfo,
-                           Boolean canInviteUsers, Boolean canPinMessages, Boolean canManageTopics) {
-        this.canSendMessage = canSendMessage;
+    public ChatMemberRestricted(String status, User user, Boolean isMember, Boolean canSendMessages, Boolean canSendAudios, Boolean canSendDocuments,
+                                Boolean canSendPhotos, Boolean canSendVideos, Boolean canSendVideoNotes, Boolean canSendVoiceNotes, Boolean canSendPolls,
+                                Boolean canSendOtherMessages, Boolean canAddWebPagePreviews, Boolean canChangeInfo, Boolean canInviteUsers, Boolean canPinMessages,
+                                Boolean canManageTopics, Integer untilDate) {
+        this.status = status;
+        this.user = user;
+        this.isMember = isMember;
+        this.canSendMessages = canSendMessages;
         this.canSendAudios = canSendAudios;
         this.canSendDocuments = canSendDocuments;
         this.canSendPhotos = canSendPhotos;
@@ -182,5 +228,6 @@ public class ChatPermissions {
         this.canInviteUsers = canInviteUsers;
         this.canPinMessages = canPinMessages;
         this.canManageTopics = canManageTopics;
+        this.untilDate = untilDate;
     }
 }

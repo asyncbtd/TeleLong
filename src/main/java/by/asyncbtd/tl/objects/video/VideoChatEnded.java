@@ -14,41 +14,28 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.video;
 
-import by.asyncbtd.tl.objects.chat.Chat;
+public class VideoChatEnded {
 
-public class Story {
+    private Integer duration;
 
-    private Chat chat;
-    private Long id;
-
-    public Chat getChat() {
-        return chat;
+    public Integer getDuration() {
+        return duration;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setChat(Chat chat) {
-        this.chat = chat;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setDuration(Integer duration) {
+        this.duration = duration;
     }
 
     public String toString() {
-        return "Story(chat=" + this.getChat() +
-                ", id=" + this.getId() + ")";
+        return "VideoChatEnded(duration=" + this.getDuration() + ")";
     }
 
-    public Story() {
+    public VideoChatEnded() {
     }
 
-    public Story(Chat chat, Long id) {
-        this.chat = chat;
-        this.id = id;
+    public VideoChatEnded(Integer duration) {
+        this.duration = duration;
     }
 }

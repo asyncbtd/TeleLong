@@ -16,26 +16,26 @@
 
 package by.asyncbtd.tl.objects;
 
-public class MessageAutoDeleteTimerChanged {
+public class CopyTextButton {
 
-    private Integer messageAutoDeleteTime;
+    private String text;
 
-    public Integer getMessageAutoDeleteTime() {
-        return messageAutoDeleteTime;
+    public String getText() {
+        return text;
     }
 
-    public void setMessageAutoDeleteTime(Integer messageAutoDeleteTime) {
-        this.messageAutoDeleteTime = messageAutoDeleteTime;
+    public void setText(String text) {
+        this.text = text;
     }
 
     public String toString() {
-        return "MessageAutoDeleteTimerChanged(messageAutoDeleteTime=" + this.getMessageAutoDeleteTime() +")";
+        return "CopyTextButton(text=" + this.getText() + ")";
     }
 
-    public MessageAutoDeleteTimerChanged() {
+    public CopyTextButton() {
     }
 
-    public MessageAutoDeleteTimerChanged(Integer messageAutoDeleteTime) {
-        this.messageAutoDeleteTime = messageAutoDeleteTime;
+    public CopyTextButton(String text) {
+        this.text = text;
     }
 }

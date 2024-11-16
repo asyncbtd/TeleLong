@@ -14,41 +14,41 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects.paid;
+package by.asyncbtd.tl.objects.chat.boost;
 
-import by.asyncbtd.tl.objects.video.Video;
+import by.asyncbtd.tl.objects.chat.Chat;
 
-public class PaidMediaVideo implements PaidMedia {
+public class ChatBoostUpdated {
 
-    private String type;
-    private Video video;
+    private Chat chat;
+    private ChatBoost boost;
 
-    public String getType() {
-        return type;
+    public Chat getChat() {
+        return chat;
     }
 
-    public Video getVideo() {
-        return video;
+    public ChatBoost getBoost() {
+        return boost;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setChat(Chat chat) {
+        this.chat = chat;
     }
 
-    public void setVideo(Video video) {
-        this.video = video;
+    public void setBoost(ChatBoost boost) {
+        this.boost = boost;
     }
 
     public String toString() {
-        return "PaidMediaVideo(type=" + this.getType() +
-                ", video=" + this.getVideo() + ")";
+        return "ChatBoostUpdated(chat=" + this.getChat() +
+                ", boost=" + this.getBoost() + ")";
     }
 
-    public PaidMediaVideo() {
+    public ChatBoostUpdated() {
     }
 
-    public PaidMediaVideo(String type, Video video) {
-        this.type = type;
-        this.video = video;
+    public ChatBoostUpdated(Chat chat, ChatBoost boost) {
+        this.chat = chat;
+        this.boost = boost;
     }
 }

@@ -14,41 +14,28 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.chat.boost;
 
-import by.asyncbtd.tl.objects.chat.Chat;
+public class ChatBoostAdded {
 
-public class Story {
+    private Integer boostCount;
 
-    private Chat chat;
-    private Long id;
-
-    public Chat getChat() {
-        return chat;
+    public Integer getBoostCount() {
+        return boostCount;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setChat(Chat chat) {
-        this.chat = chat;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setBoostCount(Integer boostCount) {
+        this.boostCount = boostCount;
     }
 
     public String toString() {
-        return "Story(chat=" + this.getChat() +
-                ", id=" + this.getId() + ")";
+        return "ChatBoostAdded(boostCount=" + this.getBoostCount() +")";
     }
 
-    public Story() {
+    public ChatBoostAdded() {
     }
 
-    public Story(Chat chat, Long id) {
-        this.chat = chat;
-        this.id = id;
+    public ChatBoostAdded(Integer boostCount) {
+        this.boostCount = boostCount;
     }
 }

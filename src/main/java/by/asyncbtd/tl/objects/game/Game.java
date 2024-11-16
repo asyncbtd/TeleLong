@@ -14,7 +14,11 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.game;
+
+import by.asyncbtd.tl.objects.Animation;
+import by.asyncbtd.tl.objects.message.MessageEntity;
+import by.asyncbtd.tl.objects.PhotoSize;
 
 import java.util.List;
 

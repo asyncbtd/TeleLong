@@ -14,28 +14,39 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.web;
 
-public class ChatBoostAdded {
+public class WebAppData {
 
-    private Integer boostCount;
+    private String data;
+    private String buttonText;
 
-    public Integer getBoostCount() {
-        return boostCount;
+    public String getData() {
+        return data;
     }
 
-    public void setBoostCount(Integer boostCount) {
-        this.boostCount = boostCount;
+    public String getButtonText() {
+        return buttonText;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public void setButtonText(String buttonText) {
+        this.buttonText = buttonText;
     }
 
     public String toString() {
-        return "ChatBoostAdded(boostCount=" + this.getBoostCount() +")";
+        return "WebAppData(data=" + this.getData() +
+                ", buttonText=" + this.getButtonText() + ")";
     }
 
-    public ChatBoostAdded() {
+    public WebAppData() {
     }
 
-    public ChatBoostAdded(Integer boostCount) {
-        this.boostCount = boostCount;
+    public WebAppData(String data, String buttonText) {
+        this.data = data;
+        this.buttonText = buttonText;
     }
 }

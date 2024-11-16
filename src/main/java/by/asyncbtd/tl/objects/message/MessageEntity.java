@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.message;
+
+import by.asyncbtd.tl.objects.User;
 
 public class MessageEntity {
 

@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.game;
+
+import by.asyncbtd.tl.objects.chat.Chat;
 
 import java.util.List;
 

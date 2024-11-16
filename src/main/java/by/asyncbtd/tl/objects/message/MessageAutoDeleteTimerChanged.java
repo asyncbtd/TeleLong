@@ -14,41 +14,28 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.message;
 
-import by.asyncbtd.tl.objects.chat.Chat;
+public class MessageAutoDeleteTimerChanged {
 
-public class Story {
+    private Integer messageAutoDeleteTime;
 
-    private Chat chat;
-    private Long id;
-
-    public Chat getChat() {
-        return chat;
+    public Integer getMessageAutoDeleteTime() {
+        return messageAutoDeleteTime;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setChat(Chat chat) {
-        this.chat = chat;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setMessageAutoDeleteTime(Integer messageAutoDeleteTime) {
+        this.messageAutoDeleteTime = messageAutoDeleteTime;
     }
 
     public String toString() {
-        return "Story(chat=" + this.getChat() +
-                ", id=" + this.getId() + ")";
+        return "MessageAutoDeleteTimerChanged(messageAutoDeleteTime=" + this.getMessageAutoDeleteTime() +")";
     }
 
-    public Story() {
+    public MessageAutoDeleteTimerChanged() {
     }
 
-    public Story(Chat chat, Long id) {
-        this.chat = chat;
-        this.id = id;
+    public MessageAutoDeleteTimerChanged(Integer messageAutoDeleteTime) {
+        this.messageAutoDeleteTime = messageAutoDeleteTime;
     }
 }

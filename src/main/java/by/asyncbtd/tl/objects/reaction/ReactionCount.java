@@ -14,41 +14,39 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects.paid;
+package by.asyncbtd.tl.objects.reaction;
 
-import by.asyncbtd.tl.objects.video.Video;
+public class ReactionCount {
 
-public class PaidMediaVideo implements PaidMedia {
+    private ReactionType type;
+    private Integer totalCount;
 
-    private String type;
-    private Video video;
-
-    public String getType() {
+    public ReactionType getType() {
         return type;
     }
 
-    public Video getVideo() {
-        return video;
+    public Integer getTotalCount() {
+        return totalCount;
     }
 
-    public void setType(String type) {
+    public void setType(ReactionType type) {
         this.type = type;
     }
 
-    public void setVideo(Video video) {
-        this.video = video;
+    public void setTotalCount(Integer totalCount) {
+        this.totalCount = totalCount;
     }
 
     public String toString() {
-        return "PaidMediaVideo(type=" + this.getType() +
-                ", video=" + this.getVideo() + ")";
+        return "ReactionCount(type=" + this.getType() +
+                ", totalCount=" + this.getTotalCount() + ")";
     }
 
-    public PaidMediaVideo() {
+    public ReactionCount() {
     }
 
-    public PaidMediaVideo(String type, Video video) {
+    public ReactionCount(ReactionType type, Integer totalCount) {
         this.type = type;
-        this.video = video;
+        this.totalCount = totalCount;
     }
 }

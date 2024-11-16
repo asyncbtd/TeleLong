@@ -14,41 +14,28 @@
  * limitations under the License.
  */
 
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.game;
 
-import by.asyncbtd.tl.objects.chat.Chat;
+public class GiveawayCreated {
 
-public class Story {
+    private Integer prizeStarCount;
 
-    private Chat chat;
-    private Long id;
-
-    public Chat getChat() {
-        return chat;
+    public Integer getPrizeStarCount() {
+        return prizeStarCount;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setChat(Chat chat) {
-        this.chat = chat;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public void setPrizeStarCount(Integer prizeStarCount) {
+        this.prizeStarCount = prizeStarCount;
     }
 
     public String toString() {
-        return "Story(chat=" + this.getChat() +
-                ", id=" + this.getId() + ")";
+        return "GiveawayCreated(prizeStarCount=" + this.getPrizeStarCount() + ")";
     }
 
-    public Story() {
+    public GiveawayCreated() {
     }
 
-    public Story(Chat chat, Long id) {
-        this.chat = chat;
-        this.id = id;
+    public GiveawayCreated(Integer prizeStarCount) {
+        this.prizeStarCount = prizeStarCount;
     }
 }

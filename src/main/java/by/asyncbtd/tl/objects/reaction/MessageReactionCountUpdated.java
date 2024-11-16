@@ -16,7 +16,7 @@
 
 package by.asyncbtd.tl.objects.reaction;
 
-import by.asyncbtd.tl.objects.Chat;
+import by.asyncbtd.tl.objects.chat.Chat;
 
 import java.util.List;
 

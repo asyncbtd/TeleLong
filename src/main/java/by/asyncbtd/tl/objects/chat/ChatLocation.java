@@ -1,4 +1,6 @@
-package by.asyncbtd.tl.objects;
+package by.asyncbtd.tl.objects.chat;
+
+import by.asyncbtd.tl.objects.Location;
 
 public class ChatLocation {
 

@@ -18,6 +18,9 @@ package by.asyncbtd.tl.objects.message;
 
 import by.asyncbtd.tl.objects.*;
 import by.asyncbtd.tl.objects.background.ChatBackground;
+import by.asyncbtd.tl.objects.chat.Chat;
+import by.asyncbtd.tl.objects.chat.ChatBoostAdded;
+import by.asyncbtd.tl.objects.chat.ChatShared;
 import by.asyncbtd.tl.objects.forum.*;
 import by.asyncbtd.tl.objects.game.*;
 import by.asyncbtd.tl.objects.keyboard.InlineKeyboardMarkup;

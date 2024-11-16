@@ -16,7 +16,7 @@
 
 package by.asyncbtd.tl.objects.message;
 
-import by.asyncbtd.tl.objects.Chat;
+import by.asyncbtd.tl.objects.chat.Chat;
 
 public class MessageOriginChat implements MessageOrigin {
 

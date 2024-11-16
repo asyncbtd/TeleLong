@@ -16,6 +16,7 @@
 
 package by.asyncbtd.tl.objects;
 
+import by.asyncbtd.tl.objects.chat.Chat;
 import by.asyncbtd.tl.objects.game.Game;
 import by.asyncbtd.tl.objects.game.Giveaway;
 import by.asyncbtd.tl.objects.game.GiveawayWinners;

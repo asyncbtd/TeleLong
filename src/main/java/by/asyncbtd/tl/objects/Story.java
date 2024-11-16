@@ -16,6 +16,8 @@
 
 package by.asyncbtd.tl.objects;
 
+import by.asyncbtd.tl.objects.chat.Chat;
+
 public class Story {
 
     private Chat chat;
